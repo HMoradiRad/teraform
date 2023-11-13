@@ -49,4 +49,9 @@ terraform plan
 terraform apply
 ```
 
+## How to contribute
+All contributions are welcomed. If you find any bugs, please file an issue.
+
+moradiradpv@gmail.com
+
 
