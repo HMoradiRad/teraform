@@ -26,7 +26,27 @@ warning: Cloning requires vCenter Server and is not supported on direct ESXi hos
 ## Get Started
 
 
-Some basic Git commands are:
+### step 1:
 ```
-git clone 
+git clone https://github.com/HMoradiRad/teraform.git
 ```
+### step 2:
+
+Replace your variables in the `teraform.tfvars` file
+
+### step 3:
+``` 
+terraform init
+```
+
+### step 4:
+```
+terraform plan
+```
+
+### step 5:
+```
+terraform apply
+```
+
+
