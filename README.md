@@ -1,5 +1,5 @@
-# Terraform
-## Terraform Provider for VMware vSphere
+
+## Terraform Vsphere Virtual Machine Cloning and Customization
 
 
 ### what is terraform?
@@ -19,9 +19,13 @@ Terraform creates and manages resources on cloud platforms and other services th
 1. Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, Terraform will recreate the VPC before scaling the virtual machines.
 warning: Cloning requires vCenter Server and is not supported on direct ESXi host connections.
 
+### Cloning and Customization
+this configuration creates a virtual machine by cloning it from a template, fetched using the vsphere_virtual_machine data source. This option allows you to locate the UUID of the template to clone, along with settings for network interface type, SCSI bus type, and disk attributes.
+
 ### prerequisites :
 1. install a virtual machine on vceneter(for template)
 1. install terraform
+
 
 ## Get Started
 
