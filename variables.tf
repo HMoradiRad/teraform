@@ -1,34 +1,49 @@
-user = "administrator@vsphare.local" # vSphere User
+# vCenter / ESXi Username
+variable "user" {}
 
-password = "P@ssw0rd" # vSphere Password
+# vCenter / ESXi Password
+variable "password" {}
 
-vsphere_server = "172.31.112.90" # vSphere URL (IP, hostname or FQDN)
+# vCenter / ESXi Endpoint
+variable "vsphere_server" {}
 
-datacenter = "HAMI" # vSphere datacenter
+# vCenter / ESXi Datacenter
+variable "datacenter" {}
 
-datastore = "SSD-Storage" # vSphere datastore
+# vCenter / ESXi Datastore
+variable "datastore" {}
 
-compute_cluster = "system" # vSphere cluster
+# vCenter / ESXI Cluster
+variable "compute_cluster" {}
 
 # Virtual Machine configuration
-name = "terraform-test" # name of the virtual machine
+# VM Name
+variable "name" {}
 
-template = "ubuntu-template-cloud" # chosen name of the template
+# Name of OVA template (chosen in import process)
+variable "template" {}
 
-network = "VM Network" # network for the VM to reside in
+# VM Network 
+variable "network" {}
 
-cpus = 2 # CPU cores of the VM
+# VM Number of CPU's
+variable "cpus" {}
 
-memory = 8024 # Memory of the VM in Mb
+# VM Memory in MB
+variable "memory" {}
 
-hostname = "hami"
+# VM IP
+variable "ip" {}
 
-domain = "deb"
+#VM Netmask
+variable "netmask" {}
 
-ip = "172.31.112.94"
+#VM gateway
+variable "gateway" {}
 
-netmask = "24"
+#VM Domain
+variable "domain" {}
 
-gateway = "172.31.112.1"
-
+# VM hostname
+variable "hostname" {}
 
