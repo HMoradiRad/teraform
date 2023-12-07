@@ -21,7 +21,7 @@ cpus = 2 # CPU cores of the VM
 
 memory = 8124 # Memory of the VM in Mb
 
-disk   = 50  # disk of the vm
+disk = 50 # disk of the vm
 
 hostname = "demo"
 
