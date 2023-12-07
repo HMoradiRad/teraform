@@ -29,6 +29,10 @@ variable "network" {}
 # VM Number of CPU's
 variable "cpus" {}
 
+# VM Disk
+
+variable "disk" {}
+
 # VM Memory in MB
 variable "memory" {}
 
